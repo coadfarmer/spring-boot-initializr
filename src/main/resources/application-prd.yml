@@ -1,0 +1,6 @@
+spring:
+  data:
+    mongodb:
+      database: restapi-initializr
+      host: 127.0.0.1s
+      port: 27017
