@@ -3,7 +3,7 @@ package com.cloume.restapi.initializr.service.impl;
 import com.cloume.restapi.initializr.model.BaseResource;
 import com.cloume.restapi.initializr.model.BaseUser;
 import com.cloume.restapi.initializr.model.Paging;
-import com.cloume.restapi.initializr.repository.BaseUserRespository;
+import com.cloume.restapi.initializr.repository.BaseUserRepository;
 import com.cloume.restapi.initializr.service.AbstractService;
 import com.cloume.restapi.initializr.service.IBaseUserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +24,7 @@ import java.util.List;
 public class BaseUserServiceImpl extends AbstractService implements IBaseUserService {
 
     @Autowired
-    private BaseUserRespository baseUserRespository;
+    private BaseUserRepository baseUserRespository;
 
     @Override
     public BaseUser create() {

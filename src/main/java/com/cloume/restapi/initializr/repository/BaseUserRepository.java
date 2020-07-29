@@ -8,5 +8,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
  * @date
  * @description
  */
-public interface BaseUserRespository extends MongoRepository<BaseUser, String> {
+public interface BaseUserRepository extends MongoRepository<BaseUser, String> {
+
+    BaseUser findTopByType(String type);
 }
